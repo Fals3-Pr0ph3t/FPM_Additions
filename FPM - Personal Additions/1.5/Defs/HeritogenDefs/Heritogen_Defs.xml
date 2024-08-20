@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Abstract base definition -->
+<HeritogenDef Name="HeritogenBase" Abstract="True">
+    <defName>HeritogenBase</defName>
+    <label>Base Heritogen</label>
+    <description>Lorem Ipsum, Heritogen bwahaha.</description>
+    <descriptionShort>Lorem Ipsum, Heritogen bwahaha.</descriptionShort>
+    <xenogene>True</xenogene> 
+
+    <!-- Caster effects-->
+    <casterRemovedGenes> 
+    </casterRemovedGenes>
+    
+    <casterAddedGenes>
+    </casterAddedGenes>
+
+    <casterRemovedHediffs>
+    </casterRemovedHediffs>
+    
+    <casterAddedHediffs>
+    </casterAddedHediffs>
+
+    <!-- Target effects-->
+    <targetRemovedGenes>
+    </targetRemovedGenes>
+
+    <targetAddedGenes>
+    </targetAddedGenes>
+
+    <targetRemovedHediffs>
+    </targetRemovedHediffs>
+
+    <targetAddedHediffs>
+    </targetAddedHediffs>
+</HeritogenDef>
+
+<!-- Concrete definition inheriting from the base -->
+<HeritogenDef ParentName="HeritogenBase">
+    <defName>HeritogenTest</defName>
+    <casterAddedGenes>
+        <li>KindInstinct</li> <!-- Ensure that KindInstinct is a valid GeneDef name in the game -->
+    </casterAddedGenes>
+</HeritogenDef>
+
+
+
+
+</Defs>

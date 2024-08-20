@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="VFEV_ApparelArmorCryptoBase" ParentName="ApparelBase" Abstract="True">
+		<techLevel>Ultra</techLevel>
+		<generateCommonality>0.5</generateCommonality>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>18</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.47</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.56</ArmorRating_Heat>
+			<Insulation_Cold>40</Insulation_Cold>
+			<Insulation_Heat>20</Insulation_Heat>
+			<EquipDelay>16</EquipDelay>
+			<MarketValue>2400</MarketValue>
+		</statBases>
+		<costList>
+			<ComponentSpacer>12</ComponentSpacer>
+			<Plasteel>130</Plasteel>
+		</costList>
+		<recipeMaker Inherit="False" />
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+			<li Class="CompProperties_Biocodable" />
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VFEV_ApparelArmorCryptoBase">
+		<defName>VFEV_CryptoArmor</defName>
+		<label>crypto armor</label>
+		<description>Low-powered plasteel carapace armor draped with an unknown but impossibly durable cloth sash affixed over one shoulder, the armor emits a low electrical hum and feels smooth to the touch. The power supply itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/CryptoLightArmor/CryptoLightArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CryptoLightArmor/CryptoLightArmor</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>CryptoLight</li>
+			</tags>
+		</apparel>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>270</MaxHitPoints>
+			<Mass>10</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.56</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>30</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>12</EquipDelay>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="VFECore.CompProperties_ApparelHediffs">
+				<hediffDefnames>
+					<li>VFEV_BleedrateCrypto_10</li>
+				</hediffDefnames>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VFEV_ApparelArmorCryptoBase">
+		<defName>VFEV_CryptoHeavyArmor</defName>
+		<label>crypto heavy armor</label>
+		<description>Heavy, high-powered plasteel plate armor affixed with an unknown but impossibly durable cloth cowl, the armor emits a low electrical hum and feels smooth to the touch. The power supply itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyArmor/CryptoHeavyArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyArmor/CryptoHeavyArmor</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>CryptoHeavy</li>
+			</tags>
+		</apparel>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="VFECore.CompProperties_ApparelHediffs">
+				<hediffDefnames>
+					<li>VFEV_BleedrateCrypto_20</li>
+				</hediffDefnames>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="VFEV_ApparelCryptoHelmetPowerBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+		<techLevel>Ultra</techLevel>
+		<recipeMaker Inherit="False" />
+		<uiIconScale>1.25</uiIconScale>
+		<generateCommonality>0.5</generateCommonality>
+		<statBases>
+			<WorkToMake>11000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+			<MarketValue>1480</MarketValue>
+		</statBases>
+		<costList>
+			<ComponentSpacer>7</ComponentSpacer>
+			<Plasteel>70</Plasteel>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VFEV_ApparelCryptoHelmetPowerBase">
+		<defName>VFEV_Apparel_CryptoLightHelmet</defName>
+		<label>crypto helmet</label>
+		<description>A lower-powered helmet with an unknown but impossibly durable cloth hood. It's theorized that either a long-lost or far-advanced civilizations scout troopers would adorn this helmet before recon missions during the mechanoid wars. The helmet itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/CryptoLightHelmet/CryptoLightHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CryptoLightHelmet/CryptoLightHelmet</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>CryptoLight</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="VFEV_ApparelCryptoHelmetPowerBase">
+		<defName>VFEV_Apparel_CryptoHeavyHelmet</defName>
+		<label>heavy crypto helmet</label>
+		<description>A heavy, high-powered helmet complete with an embedded HUD system and diagnostics display. It's theorized that either a long-lost or far-advanced civilizations shock troopers would adorn this helmet before strike missions during the mechanoid wars. The helmet itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyHelmet/CryptoHeavyHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyHelmet/CryptoHeavyHelmet</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>CryptoHeavy</li>
+			</tags>
+		</apparel>
+		<statBases>
+			<WorkToMake>21000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.74</ArmorRating_Heat>
+			<Insulation_Cold>16</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+			<MarketValue>1880</MarketValue>
+		</statBases>
+	</ThingDef>
+
+</Defs>
