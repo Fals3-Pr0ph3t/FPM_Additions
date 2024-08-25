@@ -29,4 +29,8 @@
 	<li>oskarpotocki.vanillafactionsexpanded.core</li> <!-- just trust me -->
 	<li>brrainz.harmony</li> <!-- #Paronoia -->
   </loadAfter>
+    <loadBefore> <!-- mods to load this mod before -->
+	</loadBefore>
+	<incompatibleWith> <!-- mods that are incompatible -->
+	</incompatibleWith>
 </ModMetaData>
