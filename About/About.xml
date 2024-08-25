@@ -14,6 +14,12 @@
       <packageId>Ludeon.RimWorld.Biotech</packageId>
       <displayName>Biotech</displayName>
     </li>
+	<li>
+		<packageId>EBSG.Framework</packageId>
+		<displayName>Expanded Biotech Style Genes Framework</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3112549163</steamWorkshopUrl>
+		<downloadUrl>https://github.com/KonradHeinser/EBSGFramework</downloadUrl>
+	</li>
   </modDependencies>
   <loadAfter>
     <li>Ludeon.RimWorld.Biotech</li>
