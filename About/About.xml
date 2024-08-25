@@ -15,5 +15,10 @@
   </modDependencies>
   <loadAfter>
     <li>Ludeon.RimWorld.Biotech</li>
+	
+	<!-- frameworks often used -->
+	<li>ebsg.framework</li> <!-- as you are on that discord, probally -->
+	<li>oskarpotocki.vanillafactionsexpanded.core</li> <!-- just trust me -->
+	<li>brrainz.harmony</li> <!-- #Paronoia -->
   </loadAfter>
 </ModMetaData>
