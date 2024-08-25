@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- <AbilityCategoryDef>
+    <defName>Mutation</defName>
+    <displayOrder>1000</displayOrder>
+  </AbilityCategoryDef>
+ 
+ <AbilityDef ParentName="AbilityTouchBase">
+		<defName>FPM_Beast_Bond</defName>
+		<label>physic bond</label>
+		<description>Connect a beast to the ambient psychic nexus, allowing it to deny death.</description>
+		<iconPath>UI/Abilities/Resurrect</iconPath>
+		<aiCanUse>false</aiCanUse>
+		<warmupStartSound>Resurrect_Cast</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>2</warmupTime>
+			<soundCast>Resurrect_Resolve</soundCast>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetCorpses>false</canTargetCorpses>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_CreateLinkedHediff">
+				<hediffOnCaster>FPM_Bound_Beast_Owner</hediffOnCaster>
+				<hediffOnTarget>FPM_Bound_Beast</hediffOnTarget>
+			</li>
+		</comps>
+</AbilityDef> -->
+
+<AbilityDef ParentName="AbilityTouchBase">
+	<defName>CodonTest_ability</defName>
+	<label>CodonTest</label>
+	<description>Implant a codon into the target.</description>
+	<hostile>false</hostile>
+	<iconPath>UI/Icons/Genes/Gene_XenogermReimplanter</iconPath>
+	<warmupStartSound>ReimplantXenogerm_Cast</warmupStartSound>
+    <warmupEffecter>Implant_Xenogerm</warmupEffecter>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>4</warmupTime>
+			<stunTargetOnCastStart>true</stunTargetOnCastStart>
+			<targetParams>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+	<comps>
+		<li Class="FPM_Additions.AbilityCompProperties_ImplantCodon">
+			<codonDefs>
+				<li>CodonTest</li>
+			</codonDefs>	
+		</li>
+	</comps>
+</AbilityDef>
+
+</Defs>
+
