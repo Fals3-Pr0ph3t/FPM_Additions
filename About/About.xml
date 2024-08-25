@@ -30,7 +30,7 @@
 		<li>brrainz.harmony</li> <!-- #Paronoia -->
 	</loadAfter>
     <loadBefore> <!-- mods to load this mod before -->
-		<!-- placeholder -->
+		<li>chtech.core</li>
 	</loadBefore>
 	<incompatibleWith> <!-- mods that are incompatible -->
 		<!-- placeholder -->
