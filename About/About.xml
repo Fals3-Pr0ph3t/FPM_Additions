@@ -3,6 +3,7 @@
   <name>FPM Personal Additions</name>
   <author>Fals3_Pr0ph3t</author>
   <packageId>false.personaladditions</packageId>
+  <url>https://github.com/Fals3-Pr0ph3t/FPM_Additions</url>
   <supportedVersions>
     <li>1.5</li>
   </supportedVersions>
