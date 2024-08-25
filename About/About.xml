@@ -7,7 +7,7 @@
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
-	<modVersion>x.x.x</modVersion> <!-- put mod version here. -->
+	<modVersion>x.y.z</modVersion> <!-- put mod version here. -->
 	<description>Custom Changes.</description>
 	<modDependencies>
 		<li>
