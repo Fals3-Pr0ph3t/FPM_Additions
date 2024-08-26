@@ -9,21 +9,6 @@ using RimWorld.SketchGen;
 
 namespace FPM_Additions
 {
-    /*[StaticConstructorOnStartup]
-    public static class CodonDefInintializer
-    {
-        static CodonDefInintializer()
-        {
-            foreach (var def in DefDatabase<CodonDef>.AllDefs)
-            {
-                def.ResolveReferences();
-            }
-        }
-    }*/
-
-
-
-
     public class CodonDef : GeneDef
     {
         public bool xenogene = false;
@@ -32,13 +17,13 @@ namespace FPM_Additions
         public List<GeneDef> removedGenes = new List<GeneDef>();              // Declare the list
         private string aname;
 
+
         public override void PostLoad()
         {
             base.PostLoad();
             LongEventHandler.ExecuteWhenFinished(delegate ()
                 {
                     GeneList(this);
-
                     string GeneList(CodonDef codonDef)
                     {
                         if (codonDef.geneSet == null || codonDef.geneSet.Count == 0)
@@ -61,14 +46,8 @@ namespace FPM_Additions
                             sb.Length -= 2;
                         }
 
-                        string result = sb.ToString();
-
-
-                        Log.Error("Line 78 " + result);      //debugline
-                        
+                        string result = sb.ToString();                        
                         codonDef.description = codonDef.description + "\nCodon contains the following genes:\n" + result;
-
-
                         return result;
                     }
                 });
