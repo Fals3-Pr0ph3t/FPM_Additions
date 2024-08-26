@@ -1,0 +1,5 @@
+a location to put unfinished parts
+
+It will temporarilly disable them, and in conjunction with publisher+ won't upload them. That way if you find a "simple feature" isn't simple, you put it here. You can work on it at your own leisure, but keep it on github.
+
+Or, if (this is why I made it at first) you have many small mods that you decide should be in 1 mod, but you can't get them to integrate right, you can deal with it later

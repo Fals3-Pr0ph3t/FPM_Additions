@@ -11,7 +11,7 @@
     <li>CodonTest</li>
 </abilities>
 <geneSet>
-    <li>KindInstinct</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">KindInstinct</li>
     <li>CodonTest</li>
 </geneSet>
 
