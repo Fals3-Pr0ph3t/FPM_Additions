@@ -1,4 +1,4 @@
-# Security Policy
+# Security Policy: PLACEHOLDER
 
 ## Supported Versions
 
