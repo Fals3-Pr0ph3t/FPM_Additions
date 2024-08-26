@@ -7,13 +7,16 @@
 <iconPath>UI/Icons/Genes/Gene_KindInstinct</iconPath>
 <label>Codon Test</label>
 <transfer>false</transfer>
+<abilities>
+    <li>CodonTest</li>
+</abilities>
 <geneSet>
     <li MayRequire="Ludeon.RimWorld.Biotech">KindInstinct</li>
     <li>CodonTest</li>
 </geneSet>
 
 <removedGenes>
-    
+    <!-- Empty -->    
 </removedGenes>
 </FPM_Additions.CodonDef>
 
