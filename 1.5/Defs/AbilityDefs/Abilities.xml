@@ -35,7 +35,7 @@
 </AbilityDef> -->
 
 <AbilityDef ParentName="AbilityTouchBase">
-	<defName>CodonTest_ability</defName>
+	<defName>CodonTest</defName>
 	<label>CodonTest</label>
 	<description>Implant a codon into the target.</description>
 	<hostile>false</hostile>

@@ -5,10 +5,10 @@
 <defName>CodonTest</defName>
 <description>Lorem Ipsum {0}.</description>
 <iconPath>UI/Icons/Genes/Gene_KindInstinct</iconPath>
-<label> Codon Test</label>
+<label>Codon Test</label>
 <transfer>false</transfer>
 <abilities>
-      <li>CodonTest</li>
+    <li>CodonTest</li>
 </abilities>
 <geneSet>
     <li>KindInstinct</li>
@@ -16,7 +16,7 @@
 </geneSet>
 
 <removedGenes>
-    
+    <!-- Empty -->    
 </removedGenes>
 </FPM_Additions.CodonDef>
 
