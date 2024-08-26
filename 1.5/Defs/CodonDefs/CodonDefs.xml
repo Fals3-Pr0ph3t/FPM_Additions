@@ -8,7 +8,7 @@
 <label>Codon Test</label>
 <transfer>false</transfer>
 <geneSet>
-    <li>KindInstinct</li>
+    <li MayRequire="Ludeon.RimWorld.Biotech">KindInstinct</li>
     <li>CodonTest</li>
 </geneSet>
 
