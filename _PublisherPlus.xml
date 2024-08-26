@@ -3,6 +3,10 @@
   <Excluded>
 	<exclude>.git</exclude>
 	<exclude>.github</exclude>
+	<exclude>About\Notes\Private Notes</exclude>
 	<exclude>SECURITY.md</exclude>
+	<exclude>About\Incomplete</exclude>
+	<exclude>Textures\.baseIcons</exclude>
+	<exclude>.branchLog</exclude>
   </Excluded>
 </Configuration>

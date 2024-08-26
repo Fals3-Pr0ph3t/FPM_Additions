@@ -1,0 +1,3 @@
+this is a spot to put the original part of textures, such as a image you scaled down.
+
+Incase you need to re-use it
