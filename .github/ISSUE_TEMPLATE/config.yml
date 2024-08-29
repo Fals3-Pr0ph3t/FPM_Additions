@@ -1,0 +1,15 @@
+blank_issues_enabled: false
+
+issue_templates:
+  - name: "Bug Report"
+    description: "Report an issue with the project."
+    labels: ["bug", "needs triage"]
+    title: "[BUG] "
+  - name: "Feature Request"
+    description: "Suggest a new feature for the project."
+    labels: ["enhancement", "needs discussion"]
+    title: "[FEATURE] "
+  - name: "Other"
+    description: "For any other type of issue or question."
+    labels: ["triage", "needs clarification"]
+    title: "[OTHER] "

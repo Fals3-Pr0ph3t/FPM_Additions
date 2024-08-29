@@ -1,0 +1,15 @@
+blank_issues_enabled: false
+
+pull_request_templates:
+  - name: "Bug Fix"
+    description: "Submit a pull request to fix a bug."
+    labels: ["bug", "fix"]
+    title: "[BUGFIX] "
+  - name: "Feature"
+    description: "Submit a pull request to add a new feature."
+    labels: ["enhancement", "feature"]
+    title: "[FEATURE] "
+  - name: "Other"
+    description: "Submit a pull request for any other type of change."
+    labels: ["other"]
+    title: "[OTHER] "

@@ -4,6 +4,7 @@
 	<exclude>.git</exclude>
 	<exclude>.github</exclude>
 	<exclude>About\Notes\Private Notes</exclude>
+	<exclude>docs</exclude>
 	<exclude>SECURITY.md</exclude>
 	<exclude>About\Incomplete</exclude>
 	<exclude>Textures\.baseIcons</exclude>
