@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\FPM_Additions\\1.5\\Source\\FPM - Personal Additions\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{12FE8982-48CD-4881-B4A6-BCB9A6167DFB}|FPM - Personal Additions.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\FPM_Additions\\1.5\\Source\\FPM - Personal Additions\\codon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12FE8982-48CD-4881-B4A6-BCB9A6167DFB}|FPM - Personal Additions.csproj|solutionrelative:codon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12FE8982-48CD-4881-B4A6-BCB9A6167DFB}|FPM - Personal Additions.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\fpm_additions\\1.5\\source\\fpm - personal additions\\compabilityeffect_implantcodon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12FE8982-48CD-4881-B4A6-BCB9A6167DFB}|FPM - Personal Additions.csproj|solutionrelative:compabilityeffect_implantcodon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompAbilityEffect_ImplantCodon.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\FPM_Additions\\1.5\\Source\\FPM - Personal Additions\\CompAbilityEffect_ImplantCodon.cs",
+              "RelativeDocumentMoniker": "CompAbilityEffect_ImplantCodon.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\FPM_Additions\\1.5\\Source\\FPM - Personal Additions\\CompAbilityEffect_ImplantCodon.cs",
+              "RelativeToolTip": "CompAbilityEffect_ImplantCodon.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAADYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:33:02.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Codon.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\FPM_Additions\\1.5\\Source\\FPM - Personal Additions\\Codon.cs",
+              "RelativeDocumentMoniker": "Codon.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\FPM_Additions\\1.5\\Source\\FPM - Personal Additions\\Codon.cs",
+              "RelativeToolTip": "Codon.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAxwBgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:32:50.264Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
